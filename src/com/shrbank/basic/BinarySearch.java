@@ -1,6 +1,5 @@
 package com.shrbank.basic;
 
-import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -28,7 +27,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         try {
-            int[] whitelist = In.readInts(args[0]);
+            int[] whitelist = {1, 2, 3};   //  过滤掉白名单中的数
             Arrays.sort(whitelist);
             while (!StdIn.isEmpty()) {
                 int key = StdIn.readInt();
