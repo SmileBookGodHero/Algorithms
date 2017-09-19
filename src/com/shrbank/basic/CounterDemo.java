@@ -7,15 +7,15 @@ public class CounterDemo {
     private final String name;
     private int count;
 
-    public CounterDemo(String id) {
+    private CounterDemo(String id) {
         name = id;
     }
 
-    public void increment() {
+    private void increment() {
         count++;
     }
 
-    public int tally() {
+    private int tally() {
         return count;
     }
 
