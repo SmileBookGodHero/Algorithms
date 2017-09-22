@@ -10,7 +10,7 @@ public class FixedCapacityStack<Item> {
     private Item[] a;
     private int N;
     public FixedCapacityStack(int capacity) {
-        a = (Item[]) new Object[capacity];
+        a = (Item[]) new Object[capacity];   //  java 不允许创建泛型数组，需要使用类型转换
     }
     public boolean isEmpty() {
         return N == 0;
