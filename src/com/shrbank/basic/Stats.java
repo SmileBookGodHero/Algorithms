@@ -25,7 +25,7 @@ public class Stats {
         for (double x : numbers) {
             sum += (x - mean) * (x - mean);
         }
-        double std = Math.sqrt(sum / (N - 1));
+        double std = Math.sqrt(sum / (N - 1));    // 计算标准差
 
         StdOut.printf("Mean:  %.2f\n", mean);
         StdOut.printf("Std dev: %.2f\n", std);
