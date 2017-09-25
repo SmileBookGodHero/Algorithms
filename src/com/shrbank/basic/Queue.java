@@ -1,7 +1,9 @@
 package com.shrbank.basic;
 
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 import java.util.Iterator;
-import java.util.ListIterator;
 
 /**
  * Created by lilei on 2017/9/22 下午6:19.
@@ -46,5 +48,32 @@ public class Queue<Item> implements Iterable<Item> {
     @Override
     public Iterator<Item> iterator() {
         return new ListIterator();
+    }
+    private class ListIterator implements Iterator<Item> {
+        private Node current = first;
+        public boolean hasNext() {
+            return current != null;
+        }
+        public void remove() {
+
+        }
+        public Item next() {
+            Item item = current.item;
+            current = current.next;
+            return item;
+        }
+    }
+
+    public static void main(String[] args) {
+        Queue<String> queue = new Queue<>();   // 创建一个队列，并操作字符串入列或出列
+        while (!StdIn.isEmpty()) {
+            String item = StdIn.readString();
+            if (!item.equals("-")) {
+                queue.enqueue(item);
+            } else if (!queue.isEmpty()) {
+                StdOut.print(queue.dequeue() + " ");
+            }
+        }
+        StdOut.println("(" + queue.size() + " left on queue)");
     }
 }
