@@ -6,6 +6,7 @@ import edu.princeton.cs.algs4.ThreeSum;
 
 /**
  * Created by lilei on 2017/9/26 下午2:13.
+ * 循环输出 检验程序的运行时间
  */
 public class DoublingTest {
     public static double timeTrial(int N) {
