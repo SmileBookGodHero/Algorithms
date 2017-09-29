@@ -14,15 +14,15 @@ public class Date {
         this.year = year;
     }
 
-    public int month() {
+    private int month() {
         return month;
     }
 
-    public int day() {
+    private int day() {
         return day;
     }
 
-    public int year() {
+    private int year() {
         return year;
     }
 
