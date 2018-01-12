@@ -16,6 +16,6 @@ public class EuclidAlgorithms {
     }
 
     public static void main(String[] args) {
-        System.out.println(greatestCommonDivisor(567392, 6372));
+        System.out.println(greatestCommonDivisor(567392240, 63722480));
     }
 }

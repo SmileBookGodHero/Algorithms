@@ -8,7 +8,7 @@ public class Test01 {
     public static void main(String[] args) {
         int f = 0;
         int g = 1;
-        for (int i = 0; i <= 15; i++) {
+        for (int i = 0; i <= 30; i++) {
             System.out.println(f);
             f = f + g;
             g = f - g;
