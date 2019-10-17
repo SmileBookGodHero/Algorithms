@@ -17,6 +17,7 @@ public class Accumulator {
         return total / N;
     }
 
+    @Override
     public String toString() {
         return "Mean (" + N + " value): " + String.format("%7.5f", mean());
     }
